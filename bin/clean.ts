@@ -8,5 +8,5 @@ rm -rf ... (example: Windows)
 
 rmSync('lib', {'force':true, 'recursive':true})
 rmSync('test/tmp', {'force':true, 'recursive':true})
-
-
+rmSync('release', {'force':true,'recursive':true})
+rmSync('build', {'force':true,'recursive':true})

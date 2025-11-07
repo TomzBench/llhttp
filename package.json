@@ -1,6 +1,6 @@
 {
   "name": "@altronix/llhttp",
-  "version": "9.3.0",
+  "version": "9.3.1",
   "description": "HTTP parser in LLVM IR",
   "main": "lib/llhttp.js",
   "types": "lib/llhttp.d.ts",
@@ -16,7 +16,8 @@
     "build-wasm": "npm run wasm -- --docker",
     "wasm": "node --import tsx bin/build_wasm.ts",
     "clean": "node --import tsx bin/clean.ts",
-    "prepare": "npm run clean && npm run build-ts",
+	"release": "node --import tsx bin/release.ts",
+    "prepare": "npm run clean && npm run build-ts && npm run build && npm run release",
     "test": "node --import tsx ./test/md-test.ts",
     "lint": "eslint",
     "lint-fix": "eslint --fix",
