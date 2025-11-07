@@ -1,5 +1,5 @@
 {
-  "name": "llhttp",
+  "name": "@altronix/llhttp",
   "version": "9.3.0",
   "description": "HTTP parser in LLVM IR",
   "main": "lib/llhttp.js",
